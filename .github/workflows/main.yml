@@ -24,9 +24,9 @@ jobs:
         run: python api.py
 
       - name: Upload results
-        uses: actions/upload-artifact@v4 # 升級到 v4，解決報錯關鍵
+        uses: actions/upload-artifact@v4
         with:
           name: api-output-files
           path: |
-            users.json
-            users.csv
+            data.json
+            data.csv
